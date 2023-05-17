@@ -26,6 +26,10 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MiniCardComponent } from './mini-card/mini-card.component';
+import { ProductsComponent } from './products/products.component';
+import { CustomersComponent } from './customers/customers.component';
+import { OrdersComponent } from './orders/orders.component';
+import { SalesComponent } from './sales/sales.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +43,10 @@ import { MiniCardComponent } from './mini-card/mini-card.component';
     StoreSessionsChartComponent,
     OrdersTableComponent,
     MiniCardComponent,
+    ProductsComponent,
+    CustomersComponent,
+    OrdersComponent,
+    SalesComponent,
   ],
   imports: [
     BrowserModule,
