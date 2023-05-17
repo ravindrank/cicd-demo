@@ -9,6 +9,7 @@ import { NgChartsConfiguration, NgChartsModule } from 'ng2-charts';
 import { NavComponent } from './nav/nav.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatChipListbox, MatChipsModule } from '@angular/material/chips';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
@@ -55,6 +56,7 @@ import { SalesComponent } from './sales/sales.component';
     NgChartsModule,
     MatToolbarModule,
     MatButtonModule,
+    MatChipsModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
