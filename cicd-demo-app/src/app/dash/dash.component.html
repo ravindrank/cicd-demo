@@ -4,13 +4,21 @@
   <mat-grid-list cols="{{ (cardLayout | async)?.columns }}" rowHeight="200px">
     <!--Mini Cards-->
     <mat-grid-tile
-      *ngFor="let i of [1, 2, 3, 4]"
+      *ngFor="let mc of miniCardData"
       [colspan]="(cardLayout | async)?.miniCard?.cols"
       [rowspan]="(cardLayout | async)?.miniCard?.rows"
     >
-      <app-card title="Card {{ i }}"
-        ><div>Mini Card Content Here</div></app-card
+      <mini-card
+        [isCurrency]="mc.isCurrency"
+        [isIncrease]="mc.isIncrease"
+        [duration]="mc.duration"
+        [icon]="mc.icon"
+        [title]="mc.title"
+        [value]="mc.value"
+        [color]="mc.color"
+        [percentValue]="mc.percentValue"
       >
+      </mini-card>
     </mat-grid-tile>
     <!--Charts-->
     <mat-grid-tile
