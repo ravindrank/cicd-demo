@@ -1,2 +1,2 @@
 # cicd-demo
-CI CD Demo
+CI CD Demo App
